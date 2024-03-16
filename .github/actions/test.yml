@@ -1,0 +1,15 @@
+name: Read Env Var and Print
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  print_env_var:
+    runs-on: ubuntu-latest
+    environment: test
+    steps:
+      - name: Print Environment Variable
+        run: |
+          echo "hi"
